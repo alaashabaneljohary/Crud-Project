@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CURD Operation By JAVASCRIPT">
+    <meta name="keywords" content="Html , Css , JAVASCRIPT">
+    <title>Curd Operation ( My Prodct List)</title>
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-icons.css">
+    <!-- CSS FILE-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container" id="productList">
+   <div class="text-center py-4">
+   <h1 class="display-4"> <i class="bi bi-card-checklist"></i>  My <span>Prodct</span> List</h1>
+   </div>
+ <div class="row py-5">
+    <div class="col-xl-4 card shadow-lg py-5 border-5 border-success ">
+     <h2 id="title-left">insert employee records</h2>
+     <div class="input">
+        <input type="text" class="form-control mb-4" placeholder="  Product Name" id="productName">
+     </div>
+     <div class="input">
+        <input type="text" class="form-control mb-4" placeholder=" product Price" id="productPrice">
+     </div>
+     <div class="input">
+        <input type="text" class="form-control mb-4" placeholder=" product Category" id="productCate">
+     </div>
+     <div class="input">
+        <textarea type="text" class="form-control mb-4" placeholder=" product Description" id="productDesc"></textarea>
+     </div>
+      
+     <button id="submit" class="btn btn-warning fw-bold" onclick="creatProducts()">Create</button>
+    </div>
+    <div class="col-xl-8 ">
+       <h4 class="text-center text-capitalize mb-3">view records</h4> 
+       <div class="search d-flex">
+        <input type="search" onkeyup="searchProduct(this.value)" placeholder=" search employee Here" class="form-control w-50" id="searchInput">
+        <label for="searchInput"><i class="bi bi-search"></i></label>
+       </div>
+
+       <table class="table mt-4 table-bordered shadow-lg">
+        <thead>
+            <th>Id</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Category</th>
+            <th>Product Description</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </thead>
+        <tbody id="tableRow"> 
+          
+        </tbody>
+       </table>
+    </div>
+ </div>
+</div>  
+    
+
+
+
+    <!-- SCRIPT FILE-->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body 
+{
+    font-family: 'Ubuntu', sans-serif;
+}
+.text-center i ,
+.text-center span
+{
+  color: cornflowerblue;
+}
+.search label
+{
+    background-color: green;
+    color: #FFF;
+    width: 40px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    position: relative;
+    left: -41px;
+}
+.search input 
+{
+    background-color: #ddd;
+}
